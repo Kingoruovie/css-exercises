@@ -45,3 +45,23 @@ body, html {
 .footer {
   background-color: #393f4d;
 }
+
+
+/* SOLUTION */
+.container {
+  display: grid;
+  grid-template: 1fr 1fr 5fr 1fr /1fr 3fr;
+  gap: 15px;
+}
+
+.header {
+  grid-column: 1/ span 2;
+}
+
+.sidebar {
+  grid-row: 2 / span 2;
+}
+
+.footer {
+  grid-column: 1/ span 2;
+}
